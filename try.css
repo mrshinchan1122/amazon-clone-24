@@ -1,0 +1,47 @@
+.gallery {
+    display:flex;
+    background-color: #e6e5e5e5;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 6px 8px 0px;
+    margin: 5rem;
+}
+
+#img3 {
+    height:120px;
+    width: 100px;
+    transition: all 0.5s;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+#img1, #img2{
+    width:100px;
+    height:150px; 
+    transition: all 0.5s;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#img1:hover {
+    transform: scale(1.4) rotate(12deg);
+    background-color: red;
+}
+
+#img2:hover {
+    transform: scale(1.4) rotate(12deg);
+    background-color: aqua ;
+}
+
+#img3:hover {
+    transform: scale(1.4) rotate(12deg);
+    background-color: yellow;
+}
+
+
+#img3:hover ~ .gallery {
+
+    background-color: yellow; /* Change background color of .gallery on hover */
+}
